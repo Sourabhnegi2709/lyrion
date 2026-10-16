@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#283B65"/>
+      <stop offset=".55" stop-color="#846895"/>
+      <stop offset="1" stop-color="#E1A474"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v900H0z"/>
+  <circle cx="840" cy="312" r="210" fill="#FFD9A0" fill-opacity=".8"/>
+  <path d="M0 660c192-98 370-111 564-24 203 92 406 110 636-22v286H0V660Z" fill="#20283F" fill-opacity=".7"/>
+  <path d="M600 264c135 0 244 109 244 244S735 752 600 752 356 643 356 508s109-244 244-244Z" fill="#F5E6CE"/>
+  <path d="M600 349c88 0 159 71 159 159s-71 159-159 159-159-71-159-159 71-159 159-159Z" fill="#CB795B"/>
+  <text x="72" y="104" fill="#FFF8EB" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="6">LYRION FRAME  /  CREATIVE STUDIO</text>
+  <text x="72" y="832" fill="#FFF8EB" font-family="Georgia,serif" font-size="62" font-style="italic">Made to make you look.</text>
+</svg>

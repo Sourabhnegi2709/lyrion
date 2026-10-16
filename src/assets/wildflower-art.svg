@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1440" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6DFB8"/>
+      <stop offset="1" stop-color="#8FA477"/>
+    </linearGradient>
+    <linearGradient id="pack" x1="442" y1="249" x2="986" y2="858" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EBD5"/>
+      <stop offset="1" stop-color="#D7C4A1"/>
+    </linearGradient>
+    <filter id="shadow" x="362" y="200" width="785" height="833" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="38"/>
+    </filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1440v1080H0z"/>
+  <path d="M0 743c214-116 352-85 526 34 156 107 270 104 442-17 187-131 323-143 472-89v409H0V743Z" fill="#728762" fill-opacity=".5"/>
+  <ellipse cx="759" cy="858" fill="#304439" fill-opacity=".25" filter="url(#shadow)" rx="355" ry="122"/>
+  <rect x="443" y="202" width="547" height="666" rx="22" fill="url(#pack)"/>
+  <rect x="474" y="233" width="485" height="604" rx="11" stroke="#6C735B" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M714 646c-5-144 15-246 70-347M714 643c-55-80-103-119-178-143m177 100c56-72 106-103 174-110" stroke="#667C58" stroke-width="9" stroke-linecap="round"/>
+  <path d="M781 419c61-18 93-59 98-120-63 9-103 47-113 112m-139 120c-64 3-110-26-137-85 65-10 117 15 150 72m272-34c58 14 102-5 133-57-61-21-114-7-153 42" fill="#84936C"/>
+  <path d="M742 384c-8-60 18-100 77-120 9 62-17 102-77 120Zm-111 87c-55-29-72-75-51-139 57 30 74 76 51 139Zm189 32c-2-58 30-96 94-112 1 63-31 100-94 112Z" fill="#E5A1A0"/>
+  <circle cx="748" cy="527" r="35" fill="#DCA84C"/>
+  <text x="716" y="711" fill="#3F4A38" font-family="Georgia,serif" font-size="48" text-anchor="middle">wildflower</text>
+  <text x="716" y="763" fill="#64705A" font-family="Arial,sans-serif" font-size="15" letter-spacing="4" text-anchor="middle">GROWN WITH FEELING</text>
+  <text x="80" y="112" fill="#344538" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">WILDFLOWER  /  BOTANICAL CARE</text>
+  <text x="80" y="1006" fill="#F6EBD5" font-family="Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">MADE OF WILD THINGS</text>
+</svg>

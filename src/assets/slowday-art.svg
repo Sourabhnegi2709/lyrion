@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="172" y1="14" x2="1200" y2="1066" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EDC69D"/>
+      <stop offset="1" stop-color="#B96E50"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="405" y1="184" x2="1025" y2="928" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6E8"/>
+      <stop offset="1" stop-color="#E9D7BF"/>
+    </linearGradient>
+    <filter id="shadow" x="308" y="158" width="824" height="922" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1440v1080H0z"/>
+  <circle cx="207" cy="229" r="318" fill="#FFE4B8" fill-opacity=".3"/>
+  <path d="M950 0h490v1080H650l300-1080Z" fill="#E7AC7A" fill-opacity=".45"/>
+  <ellipse cx="720" cy="862" fill="#713E34" fill-opacity=".3" filter="url(#shadow)" rx="359" ry="180"/>
+  <rect x="402" y="178" width="637" height="738" rx="7" fill="url(#paper)"/>
+  <path d="M720 324c-116 0-210 94-210 210 0 57 23 109 61 147l149 149 149-149c38-38 61-90 61-147 0-116-94-210-210-210Z" fill="#CA7755"/>
+  <path d="M720 409c69 0 125 56 125 125s-56 125-125 125-125-56-125-125 56-125 125-125Z" fill="#E7B879"/>
+  <path d="M710 443h20v150h-20z" fill="#F9E8C9"/>
+  <path d="M654 507h132v20H654z" fill="#F9E8C9"/>
+  <text x="720" y="767" fill="#634B3A" font-family="Georgia,serif" font-size="56" font-style="italic" text-anchor="middle">a slower day</text>
+  <text x="720" y="819" fill="#96745D" font-family="Arial,sans-serif" font-size="14" letter-spacing="5" text-anchor="middle">LIVE WELL, TAKE YOUR TIME</text>
+  <text x="86" y="112" fill="#5D372C" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">SLOWDAY  /  LIFESTYLE GOODS</text>
+  <text x="86" y="1000" fill="#FFF6E8" font-family="Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-2">A SLOWER KIND OF LOVELY</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="91" y1="0" x2="1349" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#233B7A"/>
+      <stop offset="1" stop-color="#526EB9"/>
+    </linearGradient>
+    <linearGradient id="sphere" x1="388" y1="212" x2="1018" y2="872" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5D9"/>
+      <stop offset=".55" stop-color="#EDCE9A"/>
+      <stop offset="1" stop-color="#D18D6F"/>
+    </linearGradient>
+    <filter id="shadow" x="230" y="167" width="1048" height="894" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1440v1080H0z"/>
+  <circle cx="1170" cy="180" r="210" fill="#91A5E1" fill-opacity=".2"/>
+  <path d="M0 867c319-95 536-105 732-19 264 116 447 93 708-25v257H0V867Z" fill="#182B60"/>
+  <ellipse cx="753" cy="827" fill="#0E1E4C" fill-opacity=".48" filter="url(#shadow)" rx="422" ry="252"/>
+  <path d="M368 671c0-224 171-405 382-405s382 181 382 405-171 128-382 128-382 96-382-128Z" fill="url(#sphere)"/>
+  <path d="M531 638c0-128 98-232 219-232s219 104 219 232-98 94-219 94-219 34-219-94Z" fill="#5375C1"/>
+  <path d="M628 606c0-71 54-129 121-129s121 58 121 129-54 59-121 59-121 12-121-59Z" fill="#E5A57E"/>
+  <path d="M0 314h1440M0 343h1440" stroke="#DBE3FF" stroke-opacity=".13" stroke-width="2"/>
+  <text x="84" y="112" fill="#F5F3ED" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">FORM STUDIO  /  VISUAL IDENTITY</text>
+  <text x="84" y="965" fill="#F5F3ED" font-family="Georgia,serif" font-size="82" font-style="italic">Form follows feeling.</text>
+  <text x="86" y="1020" fill="#F5F3ED" fill-opacity=".68" font-family="Arial,sans-serif" font-size="18" letter-spacing="5">A STUDY IN SHAPE, COLOUR &amp; CHARACTER</text>
+</svg>

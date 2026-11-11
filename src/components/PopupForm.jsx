@@ -9,14 +9,14 @@ const PopupForm = ({ onClose }) => {
     >
       {/* Form Card: Adding e.stopPropagation() prevents clicking inside the form from closing it */}
       <div
-        className="bg-[#0B1D33]  rounded-3xl w-full max-w-lg shadow-2xl border border-white/10 relative"
+        className="bg-charcoal rounded-3xl w-full max-w-lg shadow-2xl border border-white/10 relative"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="bg-[#48525B] text-white rounded-3xl p-8 lg:p-9 shadow-2xl">
+        <div className="bg-charcoal text-white rounded-3xl p-8 lg:p-9 shadow-2xl">
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-[#FACC15] text-2xl font-bold"
+            className="absolute top-4 right-4 text-white hover:text-gold text-2xl font-bold"
           >
             &times;
           </button>
@@ -62,7 +62,7 @@ const PopupForm = ({ onClose }) => {
 
             <button
               type="submit"
-              class="w-full py-4 mt-3 bg-[#FACC15] hover:bg-yellow-300 text-[#0B1D33] font-bold rounded-2xl transition-all active:scale-95"
+              class="w-full py-4 mt-3 bg-gold hover:bg-gold text-charcoal font-bold rounded-2xl transition-all active:scale-95"
             >
               APPLY NOW
             </button>

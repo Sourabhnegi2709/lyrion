@@ -6,6 +6,9 @@ import { FaAngleDown } from "react-icons/fa";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import HeadroomModule from "react-headroom";
+
+const Headroom = HeadroomModule.default ?? HeadroomModule;
 
 const dropdownConfigs = {
     services: {
@@ -28,7 +31,7 @@ const dropdownConfigs = {
 };
 
 const navLinkClass = ({ isActive }) =>
-    `nav-animate-item rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 ${isActive ? "text-orange-600" : "text-[#08182b] hover:text-orange-600"
+    `nav-animate-item rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 ${isActive ? "text-gold" : "text-charcoal hover:text-gold"
     }`;
 
 export default function Navbar() {
@@ -147,9 +150,22 @@ export default function Navbar() {
     return (
         <>
             {/* ================= NAVBAR ================= */}
+            <Headroom
+                pinStart={120}
+                upTolerance={8}
+                downTolerance={8}
+                wrapperStyle={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    zIndex: 9999,
+                }}
+                style={{ top: "1rem", zIndex: 9999 }}
+            >
             <nav
                 ref={scope}
-                className="fixed left-1/2 top-4 z-[9999] w-[calc(100%-2rem)] max-w-7xl -translate-x-1/2"
+                className="relative mx-auto w-[calc(100%-2rem)] max-w-7xl"
             >
                 <div className="relative flex h-16 items-center justify-between">
                     {/* BRAND */}
@@ -157,8 +173,8 @@ export default function Navbar() {
                         to="/"
                         className={`nav-animate-item flex items-center gap-2 ${
                             isHome
-                                ? "text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.7)]"
-                                : "text-[#08182b]"
+                                ? "text-white drop-shadow-[0_1px_4px_rgba(54,69,79,0.7)]"
+                                : "text-charcoal"
                         }`}
                     >
                         <span className="text-xl font-black tracking-[-0.06em] sm:text-2xl">
@@ -166,7 +182,7 @@ export default function Navbar() {
                         </span>
                         <span
                             className={`mt-1 border-l pl-2 text-[9px] font-bold leading-tight tracking-[0.18em] ${
-                                isHome ? "border-white/50" : "border-[#08182b]/30"
+                                isHome ? "border-white/50" : "border-charcoal/30"
                             }`}
                         >
                             FRAME
@@ -176,7 +192,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* ================= DESKTOP ================= */}
-                    <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-white/70 bg-white/75 p-1.5 text-[#08182b] shadow-lg shadow-black/5 backdrop-blur-xl lg:flex">
+                    <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-white/60 bg-white/75 p-1.5 text-charcoal shadow-lg shadow-black/10 ring-1 ring-black/[0.03] backdrop-blur-2xl backdrop-saturate-150 lg:flex">
                         <NavLink to="/" className={navLinkClass}>
                             Home
                         </NavLink>
@@ -203,7 +219,7 @@ export default function Navbar() {
                                     className={({ isActive }) =>
                                         `nav-animate-item flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-200 ${isActive || isGroupActive
                                             ? "text-orange-600"
-                                            : "text-[#08182b] hover:text-orange-600"
+                                            : "text-charcoal hover:text-gold"
                                         }`
                                     }
                                     aria-haspopup="true"
@@ -249,18 +265,18 @@ export default function Navbar() {
                         to="/contact"
                         className={({ isActive }) =>
                             `nav-animate-item hidden items-center rounded-full px-5 py-3 text-sm font-semibold transition-colors duration-200 lg:flex ${isActive
-                                ? "bg-orange-600 text-white"
-                                : "bg-[#08182b] text-white hover:bg-orange-600"
+                                ? "bg-gold text-charcoal"
+                                : "bg-charcoal text-white hover:bg-gold"
                             }`
                         }
                     >
-                        Let&apos;s talk
+                        Contact Us
                         <span aria-hidden="true" className="ml-2 text-base leading-none">↗</span>
                     </NavLink>
 
                     {/* HAMBURGER */}
                     <button
-                        className="nav-animate-item hamburger rounded-full border border-white/70 bg-white/75 p-3 text-2xl text-[#08182b] shadow-lg backdrop-blur-xl lg:hidden"
+                        className="nav-animate-item hamburger rounded-full border border-white/60 bg-white/75 p-3 text-2xl text-charcoal shadow-lg shadow-black/10 ring-1 ring-black/[0.03] backdrop-blur-2xl backdrop-saturate-150 lg:hidden"
                         onClick={() => {
                             setMobileDropdown(null);
                             setMobileOpen(true);
@@ -272,6 +288,7 @@ export default function Navbar() {
                     </button>
                 </div>
             </nav>
+            </Headroom>
 
             {/* ================= BACKDROP ================= */}
             <button
@@ -291,7 +308,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center p-6 border-b">
                     <Link
                         to="/"
-                        className="text-[#08182b] text-base font-black tracking-wide"
+                        className="text-charcoal text-base font-black tracking-wide"
                         onClick={closeMobile}
                     >
                         LYRION FRAME ART
@@ -363,7 +380,7 @@ export default function Navbar() {
                     <div className="flex justify-center items-center gap-6 text-2xl">
                         <a
                             href="https://x.com/Revagraphics"
-                            className="text-zinc-400 hover:text-orange-500 transition-all duration-300 hover:scale-110"
+                            className="text-charcoal hover:text-gold transition-all duration-300 hover:scale-110"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Twitter"
@@ -372,7 +389,7 @@ export default function Navbar() {
                         </a>
                         <a
                             href="https://www.instagram.com/werevagraphics/"
-                            className="text-zinc-400 hover:text-orange-500 transition-all duration-300 hover:scale-110"
+                            className="text-charcoal hover:text-gold transition-all duration-300 hover:scale-110"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Instagram"
@@ -381,7 +398,7 @@ export default function Navbar() {
                         </a>
                         <a
                             href="https://www.facebook.com/werevagraphics"
-                            className="text-zinc-400 hover:text-orange-500 transition-all duration-300 hover:scale-110"
+                            className="text-charcoal hover:text-gold transition-all duration-300 hover:scale-110"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Facebook"
@@ -390,7 +407,7 @@ export default function Navbar() {
                         </a>
                         <a
                             href="https://www.linkedin.com/company/werevagraphics"
-                            className="text-zinc-400 hover:text-orange-500 transition-all duration-300 hover:scale-110"
+                            className="text-charcoal hover:text-gold transition-all duration-300 hover:scale-110"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="LinkedIn"

@@ -54,8 +54,8 @@ export default function WorkFilter({
     text-sm font-semibold
     transition-all duration-300 ${
       activeTab === category
-        ? "bg-[#ff6726] text-white shadow-md"
-        : "text-gray-600 hover:bg-orange-300 hover:text-white"
+        ? "bg-gold text-charcoal shadow-md"
+        : "text-gray-600 hover:bg-gold hover:text-charcoal"
     }`}
             >
               {category}
@@ -95,7 +95,7 @@ export default function WorkFilter({
                         href={project.link || "#"}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-white text-orange-600 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-orange-50 transition-colors"
+                        className="inline-block bg-white text-charcoal px-6 py-2.5 rounded-full text-sm font-medium hover:bg-soft-gray transition-colors"
                       >
                         View Site →
                       </a>
@@ -108,14 +108,14 @@ export default function WorkFilter({
                   <h6 className="font-semibold text-zinc-900 text-lg">
                     {project.title}
                   </h6>
-                  <p className="text-orange-600 text-sm mt-1">
+                  <p className="text-charcoal text-sm mt-1">
                     {project.category}
                   </p>
                 </div>
               </div>
             ))
           ) : (
-            <div className="col-span-full text-center py-20 text-zinc-500">
+            <div className="col-span-full text-center py-20 text-charcoal">
               No projects found in this category.
             </div>
           )}

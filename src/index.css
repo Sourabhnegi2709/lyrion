@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-charcoal: #36454f;
+  --color-soft-gray: #dfe6e9;
+  --color-white: #ffffff;
+  --color-gold: #d4af37;
+  accent-color: var(--color-gold);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+}

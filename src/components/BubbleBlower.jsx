@@ -29,7 +29,7 @@ export default function BubbleBlower() {
     bubble.className =
       "absolute pointer-events-none text-white text-sm font-medium px-5 py-3 rounded-3xl shadow-2xl flex items-center gap-2 z-[9999]";
 
-    const colors = ["#f97316", "#ec4899", "#8b5cf6", "#06b67f"];
+    const colors = ["#d4af37"];
     bubble.style.backgroundColor =
       colors[Math.floor(Math.random() * colors.length)];
 
@@ -77,4 +77,3 @@ export default function BubbleBlower() {
     />
   );
 };
-

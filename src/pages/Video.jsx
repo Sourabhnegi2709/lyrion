@@ -86,7 +86,7 @@ export default function VideoPage() {
 
             <div className="bg-white min-h-screen">
                 {/* ================= HERO SECTION ================= */}
-                <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#f7f4f0]">
+                <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-soft-gray">
                     <div className="absolute inset-0 "></div>
 
                     {/* Floating Software Badges */}
@@ -96,21 +96,21 @@ export default function VideoPage() {
                             <img
                                 src={softwareTools[0].icon}
                                 alt={softwareTools[0].name}
-                                className={`${softwareTools[0].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[0].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                         <div className="absolute top-[42%] left-[3%] md:left-[6%] animate-float">
                             <img
                                 src={softwareTools[2].icon}
                                 alt={softwareTools[2].name}
-                                className={`${softwareTools[2].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[2].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                         <div className="absolute bottom-[28%] left-[8%] md:left-[12%] animate-float-delayed">
                             <img
                                 src={softwareTools[4].icon}
                                 alt={softwareTools[4].name}
-                                className={`${softwareTools[4].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[4].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
 
@@ -119,21 +119,21 @@ export default function VideoPage() {
                             <img
                                 src={softwareTools[1].icon}
                                 alt={softwareTools[1].name}
-                                className={`${softwareTools[1].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[1].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                         <div className="absolute top-[48%] right-[4%] md:right-[7%] animate-float-slow">
                             <img
                                 src={softwareTools[3].icon}
                                 alt={softwareTools[3].name}
-                                className={`${softwareTools[3].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[3].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                         <div className="absolute bottom-[24%] right-[9%] md:right-[13%] animate-float-delayed">
                             <img
                                 src={softwareTools[5].icon}
                                 alt={softwareTools[5].name}
-                                className={`${softwareTools[5].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[5].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
 
@@ -142,21 +142,21 @@ export default function VideoPage() {
                             <img
                                 src={softwareTools[6].icon}
                                 alt={softwareTools[6].name}
-                                className={`${softwareTools[6].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[6].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                         <div className="absolute bottom-[38%] right-[22%] hidden lg:block animate-float-slow">
                             <img
                                 src={softwareTools[7].icon}
                                 alt={softwareTools[7].name}
-                                className={`${softwareTools[7].size} object-contain drop-shadow-[0_8px_12px_rgba(0,0,0,0.35)]`}
+                                className={`${softwareTools[7].size} object-contain drop-shadow-[0_8px_12px_rgba(54,69,79,0.35)]`}
                             />
                         </div>
                     </div>
 
                     <div className="relative z-10 mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 sm:py-20">
                         <div className="mb-4 inline-flex max-w-full items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.18em] text-black/60 backdrop-blur-md sm:px-4 sm:py-2 sm:text-sm sm:tracking-[0.3em]">
-                            <span className="h-2 w-2 shrink-0 rounded-full bg-[#FF9800] animate-pulse sm:h-2.5 sm:w-2.5"></span>
+                            <span className="h-2 w-2 shrink-0 rounded-full bg-gold animate-pulse sm:h-2.5 sm:w-2.5"></span>
                             Professional reel-creation
                         </div>
 
@@ -168,7 +168,7 @@ export default function VideoPage() {
                         <DecorativeUnderline
                             width="min(520px, 82vw)"
                             className="mx-auto mt-2"
-                            centerColor="#3B82F6"
+                            centerColor="#d4af37"
                         />
 
                         <p className="mx-auto mt-5 mb-8 max-w-3xl px-2 text-sm leading-relaxed text-black/90 sm:mt-6 sm:mb-10 sm:px-4 sm:text-xl md:text-2xl">
@@ -184,7 +184,7 @@ export default function VideoPage() {
                                         .getElementById("projects")
                                         ?.scrollIntoView({ behavior: "smooth" })
                                 }
-                                className="min-w-0 flex-1 rounded-full bg-gradient-to-r from-[#FF9800] to-[#E91E63] px-3 py-2.5 text-xs font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(255,152,0,0.35)] active:scale-95 sm:px-6 sm:py-3 sm:text-base lg:px-10 lg:py-4 lg:text-lg"
+                                className="min-w-0 flex-1 rounded-full bg-gold px-3 py-2.5 text-xs font-semibold text-charcoal transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(212,175,55,0.35)] active:scale-95 sm:px-6 sm:py-3 sm:text-base lg:px-10 lg:py-4 lg:text-lg"
                             >
                                 View Our Work
                             </button>
@@ -208,13 +208,13 @@ export default function VideoPage() {
                 <section id="projects" className="py-24 bg-white">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-14">
-                            <h2 className="text-5xl font-bold text-[#08182b] mb-4">
+                            <h2 className="text-5xl font-bold text-charcoal mb-4">
                                 Our <ShimmerText>Projects</ShimmerText>
                             </h2>
                             <DecorativeUnderline
                                 width="260px"
                                 className="mb-4 mx-auto md:w-[320px]"
-                                centerColor="#3B82F6"
+                                centerColor="#d4af37"
                             />
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                                 A selection of recent work — commercials, social content, and
@@ -246,11 +246,11 @@ export default function VideoPage() {
 
                                                     // ✅ Responsive fan spacing
                                                     transform: `
-                  translateX(${offset * (window.innerWidth < 640 ? 40 : 80)}px)
-                  translateY(${Math.abs(offset) * (window.innerWidth < 640 ? -15 : -25)}px)
-                  rotate(${offset * (window.innerWidth < 640 ? 8 : 12)}deg)
-                  scale(${offset === 0 ? 1 : 0.9})
-                `,
+                                                      translateX(${offset * (window.innerWidth < 640 ? 40 : 80)}px)
+                                                      translateY(${Math.abs(offset) * (window.innerWidth < 640 ? -15 : -25)}px)
+                                                      rotate(${offset * (window.innerWidth < 640 ? 8 : 12)}deg)
+                                                      scale(${offset === 0 ? 1 : 0.9})
+                                                    `,
 
                                                     transition:
                                                         "transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
@@ -350,13 +350,13 @@ export default function VideoPage() {
                 <section className="py-24 bg-slate-50">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-16">
-                            <h2 className="text-5xl font-bold text-[#08182b] mb-4">
+                            <h2 className="text-5xl font-bold text-charcoal mb-4">
                                 What We <ShimmerText>Deliver</ShimmerText>
                             </h2>
                             <DecorativeUnderline
                                 width="280px"
                                 className="mb-4 mx-auto"
-                                centerColor="#3B82F6"
+                                centerColor="#d4af37"
                             />
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                                 End-to-end video solutions tailored for brands, creators, and
@@ -395,12 +395,12 @@ export default function VideoPage() {
                                     key={i}
                                     className="group bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
                                 >
-                                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FF9800]/15 to-[#E91E63]/15 flex items-center justify-center mb-5">
+                                    <div className="w-12 h-12 rounded-2xl bg-gold/15 flex items-center justify-center mb-5">
                                         <span className="text-2xl font-bold text-orange-500">
                                             {i + 1}
                                         </span>
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#08182b] mb-3">
+                                    <h3 className="text-xl font-bold text-charcoal mb-3">
                                         {item.title}
                                     </h3>
                                     <p className="text-gray-600 leading-relaxed">{item.desc}</p>
@@ -412,7 +412,7 @@ export default function VideoPage() {
 
                 {/* ================= CTA ================= */}
                 <section className="py-24 bg-slate-950 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#FF9800]/10 via-transparent to-[#E91E63]/10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-gold/10 via-transparent to-gold/10"></div>
                     <div className="relative max-w-4xl mx-auto px-6 text-center">
                         <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
                             Ready to elevate your <ShimmerText>video content</ShimmerText>?
@@ -423,7 +423,7 @@ export default function VideoPage() {
                         </p>
                         <Link
                             to="/contact"
-                            className="inline-flex px-12 py-4 bg-gradient-to-r from-[#FF9800] to-[#E91E63] text-white font-semibold rounded-full text-lg hover:shadow-[0_0_40px_rgba(255,152,0,0.4)] transition-all duration-300 hover:scale-105"
+                            className="inline-flex px-12 py-4 bg-gold text-charcoal font-semibold rounded-full text-lg hover:shadow-[0_0_40px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-105"
                         >
                             Get Started
                         </Link>

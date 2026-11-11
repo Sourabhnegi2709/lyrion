@@ -90,7 +90,7 @@ export default function SkillsTabs() {
 
   return (
     <section className="w-full h-auto bg-gradient-to-b from-gray-50 to-white ">
-      <GridBg gridSize={80} lineColor="#f5f1ed" bgColor="#fff">
+      <GridBg gridSize={80} lineColor="#dfe6e9" bgColor="#ffffff">
 
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* ---------------- HEADING ---------------- */}
@@ -103,7 +103,7 @@ export default function SkillsTabs() {
           <DecorativeUnderline
             width="320px" // Adjust width as needed
             className="mt-4 mx-auto"
-            centerColor="#3B82F6" // Optional: change blue color
+            centerColor="#d4af37"
                           />
 
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
@@ -139,7 +139,7 @@ export default function SkillsTabs() {
                   transition-all duration-300
                   ${
                     activeTab === tab.key
-                      ? "bg-[#ff6726] text-white shadow-md"
+                      ? "bg-gold text-charcoal shadow-md"
                       : "text-gray-600 hover:bg-gray-100"
                   }
                 `}

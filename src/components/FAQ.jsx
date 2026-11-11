@@ -62,23 +62,23 @@ function FaqRow({ item, isOpen, onToggle }) {
   }, [isOpen]);
 
   return (
-    <div className="border-b border-[#0B1D33]/12">
+    <div className="border-b border-soft-gray">
       <button
         onClick={onToggle}
         className="w-full flex items-center cursor-hover justify-between gap-6 py-6 text-left"
       >
-        <span className="font-sarif font-semibold text-[#0B1D33] text-base md:text-lg">
+        <span className="font-sarif font-semibold text-charcoal text-base md:text-lg">
           {item.q}
         </span>
         <span
           ref={iconRef}
-          className="shrink-0 flex items-center justify-center h-7 w-7 rounded-full border border-[#C9A227] text-[#C9A227] font-sarif text-lg leading-none"
+          className="shrink-0 flex items-center justify-center h-7 w-7 rounded-full border border-gold text-gold font-sarif text-lg leading-none"
         >
           +
         </span>
       </button>
       <div ref={panelRef} className="overflow-hidden h-0">
-        <p className="font-sarif text-[#3D4A57]/85 text-sm md:text-base leading-relaxed pb-6 pr-10">
+        <p className="font-sarif text-charcoal/85 text-sm md:text-base leading-relaxed pb-6 pr-10">
           {item.a}
         </p>
       </div>
@@ -112,21 +112,21 @@ export default function FAQ() {
     <section
       id="faq"
       ref={sectionRef}
-      className="relative bg-[#F3EEE3] py-24 md:py-32"
+      className="relative bg-soft-gray py-24 md:py-32"
     >
       <div className="max-w-4xl mx-auto flex flex-col items-center px-6 md:px-10">
         {/* Heading section centered */}
         <div ref={headingRef} className="mb-14 text-center">
 
 
-          <div className="inline-block px-6 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
-            <p className="font-serif text-[#0B1D33] font-bold text-sm md:text-base tracking-[0.3em] uppercase m-0 flex items-center gap-2">
-              <span className="text-[#C9A227]">◆</span>Frequently Asked
+          <div className="inline-block px-6 py-2 bg-gold/10 border border-gold/30 rounded-full mb-6">
+            <p className="font-serif text-charcoal font-bold text-sm md:text-base tracking-[0.3em] uppercase m-0 flex items-center gap-2">
+              <span className="text-gold">◆</span>Frequently Asked
               Questions
             </p>
           </div>
           
-          <h2 className="font-sarif text-[#0B1D33] text-3xl md:text-[2.75rem] leading-[1.12] font-semibold">
+          <h2 className="font-sarif text-charcoal text-3xl md:text-[2.75rem] leading-[1.12] font-semibold">
             Answered, before you ask.
           </h2>
         </div>
@@ -146,7 +146,7 @@ export default function FAQ() {
         {/* Footer text centered */}
         <a
           href="#contact"
-          className="inline-block cursor-hover font-sarif text-xs lg:text-sm tracking-widest uppercase text-[#0B1D33] bg-[#C9A227] px-8 py-3.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300 mt-12"
+          className="inline-block cursor-hover font-sarif text-xs lg:text-sm tracking-widest uppercase text-charcoal bg-gold px-8 py-3.5 rounded-md hover:bg-gold transition-colors duration-300 mt-12"
         >
           Have a different question? just ask →
         </a>

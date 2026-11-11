@@ -9,8 +9,8 @@ const tabs = [
     tag: "What We Do",
     label: "Our Mission",
     emoji: "🚀",
-    accent: "#FF5C35",
-    accentLight: "#fff3f0",
+    accent: "#d4af37",
+    accentLight: "#dfe6e9",
     content:
       "We are on a mission to satisfy all our valuable clients through high-quality and result-oriented Digital Design and Branding Services across the globe.",
     image:
@@ -27,8 +27,8 @@ const tabs = [
     tag: "Where We're Headed",
     label: "Our Vision",
     emoji: "👁️",
-    accent: "#3B5BDB",
-    accentLight: "#eef2ff",
+    accent: "#d4af37",
+    accentLight: "#dfe6e9",
     content:
       "Our vision is to break the digital world with innovation and powerful creative solutions.",
     image:
@@ -69,11 +69,11 @@ export default function Mission() {
   const imgRef = useAnimateIn(activeTab);
 
   return (
-    <section className="bg-[#f7f4f0] py-16 md:py-20 px-4">
+    <section className="bg-soft-gray py-16 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14">
-          <span className="text-xs uppercase tracking-widest px-4 py-1.5 bg-white border rounded-full text-gray-500">
+          <span className="text-xs uppercase tracking-widest px-4 py-1.5 bg-white border border-soft-gray rounded-full text-charcoal">
             Who We Are
           </span>
 
@@ -85,7 +85,7 @@ export default function Mission() {
           <DecorativeUnderline
             width="400px" // Adjust width as needed
             className="mt-4 mx-auto"
-            centerColor="#3B82F6" // Optional: change blue color
+            centerColor="#d4af37"
             />
         </div>
 
@@ -100,9 +100,9 @@ export default function Mission() {
               }}
               className="flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold border whitespace-nowrap transition-all"
               style={{
-                background: activeTab === tab.id ? tab.accent : "#fff",
-                color: activeTab === tab.id ? "#fff" : "#555",
-                borderColor: activeTab === tab.id ? tab.accent : "#e5e5e5",
+                background: activeTab === tab.id ? tab.accent : "#ffffff",
+                color: "#36454f",
+                borderColor: activeTab === tab.id ? tab.accent : "#dfe6e9",
               }}
             >
               {tab.emoji} {tab.label}
@@ -151,7 +151,7 @@ export default function Mission() {
                   >
                     {s.value}
                   </div>
-                  <div className="text-xs text-gray-500">{s.label}</div>
+                  <div className="text-xs text-charcoal">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -196,7 +196,7 @@ export default function Mission() {
                 width: activeTab === tab.id ? "24px" : "10px",
                 height: "10px",
                 borderRadius: "999px",
-                background: activeTab === tab.id ? tab.accent : "#ddd",
+                background: activeTab === tab.id ? tab.accent : "#dfe6e9",
               }}
             />
           ))}

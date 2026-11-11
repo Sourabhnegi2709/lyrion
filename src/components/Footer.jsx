@@ -17,7 +17,7 @@ import { FaXTwitter } from "react-icons/fa6";
 gsap.registerPlugin(ScrollTrigger);
 
 const WORD = "lyrion";
-const WORD_GLOW_COLORS = ["#ff6726", "#facc15", "#22d3ee", "#a78bfa", "#f472b6"];
+const WORD_GLOW_COLORS = ["#d4af37"];
 
 
 
@@ -133,10 +133,10 @@ export default function Footer() {
     const closeModal = () => setSelectedBadge(null);
 
     return (
-        <footer className="bg-[#30303c] text-zinc-300 border-t border-zinc-800">
+        <footer className="bg-charcoal text-soft-gray border-t border-soft-gray/20">
             {/* ── MIDDLE SECTION ──────────────────────────────────────── */}
 
-            <section className="bg-[#30303c] text-white border-t border-zinc-800">
+            <section className="bg-charcoal text-white border-t border-soft-gray/20">
                 <div className="max-w-[90%] mx-auto px-6 py-12">
                     <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between gap-12">
                         {/* Logo + rating */}
@@ -151,7 +151,7 @@ export default function Footer() {
                             <div className="flex justify-center gap-1 text-2xl text-yellow-400 lg:justify-start">
                                 ★ ★ ★ ★ ★
                             </div>
-                            <p className="text-base text-zinc-300 max-w-sm">
+                            <p className="text-base text-soft-gray max-w-sm">
                                 Overall client rating is <b>4.9 out of 8,500</b> clients for
                                 Lyrion Frame Art.
                             </p>
@@ -190,7 +190,7 @@ export default function Footer() {
                                         href={href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group flex items-center gap-3 text-zinc-400 hover:text-orange-400 transition-all duration-300 hover:scale-105"
+                                        className="group flex items-center gap-3 text-soft-gray hover:text-gold transition-all duration-300 hover:scale-105"
                                     >
                                         {icon}
                                         <span className="font-medium">{label}</span>
@@ -234,9 +234,9 @@ export default function Footer() {
                         <div>
                             <Link
                                 to="/contact"
-                                className="inline-block bg-gradient-to-r from-[#FF9800] to-[#E91E63] px-8 py-4 rounded-xl font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-orange-500/40 hover:scale-105"
+                                className="inline-block bg-gold px-8 py-4 rounded-xl font-semibold text-sm text-charcoal transition-all duration-300 shadow-lg hover:shadow-gold/40 hover:scale-105"
                             >
-                                Our Brochure →
+                                Contact Us →
                             </Link>
                         </div>
                     </div>
@@ -244,9 +244,9 @@ export default function Footer() {
             </section>
 
             {/* ── BIG TEXT ───────────────────────────────────────────── */}
-            <section
+            {/* <section
                 ref={bigTextRef}
-                className="relative isolate overflow-hidden bg-[#30303c] border-t border-zinc-800 py-2 sm:py-8 md:py-10 group"
+                className="relative isolate overflow-hidden bg-charcoal border-t border-soft-gray/20 py-2 sm:py-8 md:py-10 group"
             >
                 <div
                     ref={colorOrbRef}
@@ -297,10 +297,10 @@ export default function Footer() {
                         );
                     })}
                 </div>
-            </section>
+            </section> */}
 
             {/* -------------- BOTTOM BAR ----------- */}
-            <div className="bg-[#30303c] border-t border-zinc-800">
+            <div className="bg-charcoal border-t border-soft-gray/20">
                 <div className="max-w-[90%] mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
                     <p>
                         © {new Date().getFullYear()}{" "}
@@ -318,7 +318,7 @@ export default function Footer() {
                             <FaHeart />
                         </span>{" "}
                         by{" "}
-                        <span className="bg-gradient-to-r from-[#FF9800] to-[#E91E63] bg-clip-text text-transparent font-medium">
+                        <span className="text-gold font-medium">
                             Lyrion Frame Art
                         </span>
                     </p>

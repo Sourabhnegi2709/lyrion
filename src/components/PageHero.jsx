@@ -41,7 +41,7 @@ const PageHero = ({ eyebrow, title, subtitle, image }) => {
         style={{ backgroundImage: `url(${image})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.7)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(54,69,79,0.7)_100%)]" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 pt-28 pb-20 text-center">
         <p className="hero-eyebrow mb-5 text-xs font-semibold uppercase tracking-[0.4em] text-amber-400">

@@ -207,7 +207,7 @@ const About = () => {
             <span
               key={i}
               className="flex items-center gap-12 text-3xl font-extrabold uppercase text-transparent md:text-5xl"
-              style={{ WebkitTextStroke: "1px rgba(251,191,36,0.7)" }}
+              style={{ WebkitTextStroke: "1px rgba(212,175,55,0.7)" }}
             >
               {s}
               <FaFilm className="text-2xl text-amber-400" />

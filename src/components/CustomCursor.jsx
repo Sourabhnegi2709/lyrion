@@ -43,8 +43,8 @@ export default function CustomCursor() {
     const setHovered = (isHovered) => {
       gsap.to(ring, {
         scale: isHovered ? 2 : 1,
-        background: isHovered ? "rgba(201,162,39,.12)" : "transparent",
-        borderColor: "#C9A227",
+        background: isHovered ? "rgba(212,175,55,.12)" : "transparent",
+        borderColor: "#d4af37",
         duration: 0.25,
       });
 
@@ -100,12 +100,12 @@ export default function CustomCursor() {
     <>
       <div
         ref={dotRef}
-        className="cursor-dot pointer-events-none fixed left-0 top-0 z-[99999] h-2 w-2 rounded-full bg-[#C9A227] opacity-0"
+        className="cursor-dot pointer-events-none fixed left-0 top-0 z-[99999] h-2 w-2 rounded-full bg-gold opacity-0"
       />
 
       <div
         ref={ringRef}
-        className="custom-cursor pointer-events-none fixed left-0 top-0 z-[99998] h-10 w-10 rounded-full border border-[#C9A227] opacity-0 mix-blend-difference"
+        className="custom-cursor pointer-events-none fixed left-0 top-0 z-[99998] h-10 w-10 rounded-full border border-gold opacity-0 mix-blend-difference"
       />
     </>
   );

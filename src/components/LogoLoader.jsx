@@ -139,7 +139,7 @@ const LogoLoader = ({ onComplete }) => {
           className="absolute inset-0 -z-10 blur-3xl rounded-full opacity-0"
           style={{
             background:
-              "radial-gradient(circle, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 70%)",
+              "radial-gradient(circle, rgba(54,69,79,0.06) 0%, rgba(54,69,79,0) 70%)",
             width: "140%",
             height: "140%",
             left: "-20%",
@@ -160,7 +160,7 @@ const LogoLoader = ({ onComplete }) => {
         <div className="h-[4px] w-40 md:w-56 bg-zinc-150 rounded-full overflow-hidden bg-zinc-100">
           <div   
             ref={progressRef}
-            className="h-full w-full bg-gradient-to-r from-[#FF9800] to-[#E91E63] rounded-full origin-left"
+            className="h-full w-full bg-gold rounded-full origin-left"
             style={{ transform: "scaleX(0)" }}
           />
         </div>

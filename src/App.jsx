@@ -19,15 +19,18 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import CustomCursor from "./components/CustomCursor";
+import GoToTop from "./components/GoToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () => {
   
   return (
     <Router>
+      <ScrollToTop />
       <Navbar/>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
+      <GoToTop />
 
       {/* {showLoader && <LogoLoader onComplete={() => setShowLoader(false)} />} */}
 

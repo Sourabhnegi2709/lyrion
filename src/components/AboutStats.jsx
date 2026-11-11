@@ -9,7 +9,7 @@ export default function AboutStats() {
   return (
     <section
       aria-labelledby="about-heading"
-      className="relative overflow-hidden bg-[#0a0a0a] px-6 py-20 text-white sm:px-10 sm:py-24 lg:px-16 lg:py-28"
+      className="relative overflow-hidden bg-charcoal px-6 py-20 text-white sm:px-10 sm:py-24 lg:px-16 lg:py-28"
     >
       <div
         aria-hidden="true"
